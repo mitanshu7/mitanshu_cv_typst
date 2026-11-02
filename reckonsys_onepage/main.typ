@@ -74,6 +74,9 @@
   company: "Reckonsys Tech Labs Private Limited",
   dates: dates-helper(start-date: "Dec 2025", end-date: "Present"),
 )
+- Engineered a distributed Ray pipeline for embedding generation, scaling to 150M+ documents
+- Built a Django mock test platform replicating PTE and IELTS exam format, scoring, and behavior
+- Integrated guardrails and structured outputs into LLM workflows for safer, faster responses
 
 
 #work(
@@ -82,6 +85,8 @@
   company: "Department of Electrical Engineering, Indian Institute of Technology Bombay (IITB)",
   dates: dates-helper(start-date: "Aug 2025", end-date: "Nov 2025"),
 )
+- Built a pipeline scraping 17,000+ StoryWeaver stories and extracting 20+ readability features per story
+- Trained Random Forest on a curated set to predict reading level, reaching 58.5% four-class accuracy
 
 
 #work(
@@ -90,7 +95,7 @@
   company: "Department of Computational and Data Sciences, Indian Institute of Science (IISc)",
   dates: dates-helper(start-date: "Feb 2025", end-date: "May 2025"),
 )
-
+- Fine-Tuned IBM Granite Models for Scientific Machine Learning improving domain-specific performance
 
 #work(
   title: "Research Associate",
@@ -98,6 +103,8 @@
   company: "Department of Physics, Indian Institute of Science Education and Reasearch (IISER)",
   dates: dates-helper(start-date: "Feb 2023", end-date: "Feb 2024"),
 )
+- Investigated brain network synchronization using a modified Kuramoto Model on various network topologies
+- Developed an end-to-end EEG pipeline for brain network construction, graph feature extraction, and ML classification
 
 // == Projects
 //
@@ -120,16 +127,16 @@
   activity: "Speaker at Cypher AI summit & Expo",
   dates: "Oct 2026",
 )
-- Presented #link("https://www.linkedin.com/posts/reckonsys_cypher2026-reckonsys-generativeai-activity-7513890948720955393-R1uI")[The Half-Life of a Prompt], a talk for 7000+ attendees.
-- Argued that prompts decay with every model upgrade and should be re-evaluated on a schedule.
+- Presented #link("https://www.linkedin.com/posts/reckonsys_cypher2026-reckonsys-generativeai-activity-7513890948720955393-R1uI")[The Half-Life of a Prompt], a talk for 7000+ attendees
+- Argued that prompts decay with every model upgrade and should be re-evaluated on a schedule
 
 
 #extracurriculars(
   activity: "Speaker at Bengaluru Tech Week",
   dates: "Sep 2026",
 )
-- Designed and led #link("https://luma.com/o5lg4fhp")[The Agent Autopsy], a hands-on session for 250+ attendees.
-- Dissected how AI agents fail in production, covering prompt injection, tool abuse, and mitigations.
+- Designed and led #link("https://luma.com/o5lg4fhp")[The Agent Autopsy], a hands-on session for 250+ attendees
+- Dissected how AI agents fail in production, covering prompt injection, tool abuse, and mitigations
 
 == Publications & Features
 #certificates(
