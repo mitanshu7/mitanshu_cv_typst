@@ -18,7 +18,6 @@
   lang: "en",
   body,
 ) = {
-
   // Sets document metadata
   set document(author: author, title: author)
 
@@ -29,18 +28,17 @@
     size: font-size,
     lang: lang,
     // Disable ligatures so ATS systems do not get confused when parsing fonts.
-    ligatures: false
+    ligatures: false,
   )
 
   // Reccomended to have 0.5in margin on all sides
   set page(
-    margin: (0.5in),
+    margin: 0.5in,
     paper: paper,
   )
 
   // Link styles
   show link: underline
-
 
   // Small caps for section titles
   show heading.where(level: 2): it => [
@@ -74,7 +72,7 @@
   let contact-item(value, prefix: "", link-type: "") = {
     if value != "" {
       if link-type != "" {
-        link(link-type + value)[#(prefix + value)]
+        prefix + link(link-type + value)[#(value)]
       } else {
         value
       }
@@ -91,12 +89,36 @@
           contact-item(phone, link-type: "tel:"),
           contact-item(location),
           contact-item(email, link-type: "mailto:"),
-          contact-item(github, link-type: "https://"),
-          contact-item(linkedin, link-type: "https://"),
-          contact-item(personal-site, link-type: "https://"),
+          contact-item(
+            github,
+            prefix: [#box(baseline: 0.2em, outset: 0.2em, image("assets/github.svg", height: 1em, alt: "GitHub")) ],
+            link-type: "https://github.com/",
+          ),
+          contact-item(
+            linkedin,
+            prefix: [#box(baseline: 0.2em, outset: 0.2em, image(
+              "assets/linkedin.svg",
+              height: 1em,
+              alt: "LinkendIn",
+            )) ],
+            link-type: "https://linkedin.com/in/",
+          ),
+          // contact-item(
+          //   personal-site,
+          //   link-type: "https://",
+          // ),
+          contact-item(
+            personal-site,
+            prefix: [#box(baseline: 0.2em, outset: 0.2em, image(
+              "assets/papermatch.png",
+              height: 1em,
+              alt: "PaperMatch",
+            )) ],
+            link-type: "https://",
+          ),
           contact-item(
             orcid,
-            prefix: [#box(baseline: -0.08em, image("assets/orcid.svg", height: 1em, alt: "ORCID iD"))orcid.org/],
+            prefix: [#box(baseline: 0.2em, image("assets/orcid.svg", height: 1em, alt: "ORCID iD"))],
             link-type: "https://orcid.org/",
           ),
         )
@@ -200,7 +222,7 @@
       if role == "" {
         [*#name* #if url != "" and dates != "" [ (#link("https://" + url)[#url])]]
       } else {
-        [*#role*, #name #if url != "" and dates != ""  [ (#link("https://" + url)[#url])]]
+        [*#role*, #name #if url != "" and dates != "" [ (#link("https://" + url)[#url])]]
       }
     },
     right: {
@@ -218,11 +240,12 @@
   issuer: "",
   url: "",
   date: "",
+  file_type: "PDF",
 ) = {
   [
     *#name*, #issuer
     #if url != "" {
-      [ (#link("https://" + url)[#url])]
+      [ (#link(url)[#file_type])]
     }
     #h(1fr) #date
   ]
