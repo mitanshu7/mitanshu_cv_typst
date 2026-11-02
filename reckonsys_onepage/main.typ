@@ -114,14 +114,14 @@
 //   - Manage PR reviews, bug fixes, and coordinate with college for releasing scheduling data and over \$1500 of yearly funding
 // - Ensure 99.99% uptime during peak loads of 1M daily requests during course registration through redundant servers
 
-== Extracurricular Activities
+== Talks & Workshops
 
 #extracurriculars(
   activity: "Speaker at Cypher AI summit & Expo",
   dates: "Oct 2026",
 )
 - Presented #link("https://www.linkedin.com/posts/reckonsys_cypher2026-reckonsys-generativeai-activity-7513890948720955393-R1uI")[The Half-Life of a Prompt], a talk for 7000+ attendees.
-- Argued that prompts decay with every model upgrade and should be re-evaluated or retired on a schedule.
+- Argued that prompts decay with every model upgrade and should be re-evaluated on a schedule.
 
 
 #extracurriculars(
@@ -131,18 +131,13 @@
 - Designed and led #link("https://luma.com/o5lg4fhp")[The Agent Autopsy], a hands-on session for 250+ attendees.
 - Dissected how AI agents fail in production, covering prompt injection, tool abuse, and mitigations.
 
-== Skills
-- *Programming Languages*: Python, C++, Rust, SQL, HTML, CSS, JavaScript, Bash, MATLAB, LaTeX
-- *ML Frameworks*: Hugging Face, Pytorch, Ray, LangChain, Sentence Transformers, Milvus, scikit-learn
-- *Technologies*: git, UNIX, Docker, Podman, systemD, Ansible, numpy, NetworkX, MNE, matplotlib, HPC
-
 == Publications & Features
 #certificates(
-  name: "PaperMatch: Cross-Domain Semantic Search",
+  name: "PaperMatch",
   issuer: "International Conference on Applied AI and Scientific Machine Learning",
   url: "https://casml.cc/posters-2024/#:~:text=Mitanshu%20Sukhwani*,Accelerating%20Scientific%20Discovery",
   date: "2024",
-  file_type: "Conference Proceedings",
+  file_type: "Proceedings",
 )
 
 #certificates(
@@ -150,7 +145,7 @@
   issuer: "Tailscale",
   url: "https://tailscale.com/blog/tailscale-jailbroken-kindle",
   date: "2025",
-  file_type: "Company Blog",
+  file_type: "Blog",
 )
 
 == Certifications
@@ -171,10 +166,15 @@
   file_type: "PDF",
 )
 
-#certificates(
-  name: "Physics",
-  issuer: "Graduate Aptitude Test in Engineering",
-  url: "https://raw.githubusercontent.com/mitanshu7/dumpyard/refs/heads/main/C193R34ScoreCard.pdf",
-  date: "2023",
-  file_type: "PDF",
-)
+// #certificates(
+//   name: "Physics",
+//   issuer: "Graduate Aptitude Test in Engineering",
+//   url: "https://raw.githubusercontent.com/mitanshu7/dumpyard/refs/heads/main/C193R34ScoreCard.pdf",
+//   date: "2023",
+//   file_type: "PDF",
+// )
+
+== Skills
+- *Programming Languages*: Python, C++, Rust, SQL, HTML, CSS, JavaScript, Bash, MATLAB, LaTeX
+- *ML Frameworks*: Hugging Face, Pytorch, Ray, LangChain, Sentence Transformers, Milvus, scikit-learn
+- *Technologies*: git, UNIX, Docker, Podman, systemD, Ansible, numpy, NetworkX, MNE, matplotlib, HPC
